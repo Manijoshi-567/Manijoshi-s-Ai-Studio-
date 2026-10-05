@@ -587,7 +587,7 @@ class LLMClient:
     </section>
 
     <footer>
-        <p>&copy; 2026 {brand} Official Platform. Powered by Jo's AI Studio.</p>
+        <p>&copy; 2026 {brand} Official Platform. Powered by Manijoshi's AI Studio.</p>
     </footer>
 
     <script>lucide.createIcons();</script>

@@ -1,4 +1,4 @@
-# Security Policy — Joshi's AI Studio
+# Security Policy — Manijoshi's AI Studio
 
 ## 🛡️ Supported Versions
 

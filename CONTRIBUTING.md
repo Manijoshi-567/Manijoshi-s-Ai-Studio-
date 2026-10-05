@@ -1,4 +1,4 @@
-# Contributing to Joshi's AI Studio
+# Contributing to Manijoshi's AI Studio
 
 Thank you for your interest in contributing! This document provides guidelines and instructions for contributing.
 

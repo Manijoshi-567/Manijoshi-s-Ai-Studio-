@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Security-Hardened-red?style=for-the-badge&logo=shield" />
 </p>
 
-<h1 align="center">🎨 Joshi's AI Studio</h1>
+<h1 align="center">🎨 Manijoshi's AI Studio</h1>
 
 <p align="center">
   <strong>An autonomous multi-agent AI system that generates stunning, production-ready landing pages in under 90 seconds.</strong>
@@ -53,7 +53,7 @@ Building high-quality landing pages today is **expensive, slow, and fragmented**
 
 ## 💡 Solution
 
-**Joshi's AI Studio** solves this with a **4-agent AI pipeline** that mirrors a real creative agency:
+**Manijoshi's AI Studio** solves this with a **4-agent AI pipeline** that mirrors a real creative agency:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -195,7 +195,7 @@ flowchart LR
 
 ## 🏆 Differentiator Matrix
 
-| Feature | Joshi's AI Studio | Wix ADI | Framer AI | v0 by Vercel | Mixo.io |
+| Feature | Manijoshi's AI Studio | Wix ADI | Framer AI | v0 by Vercel | Mixo.io |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | **Multi-Agent Pipeline** | ✅ 4 agents | ❌ | ❌ | ❌ | ❌ |
 | **URL-to-Landing Page** | ✅ | ❌ | ❌ | ❌ | ✅ |
@@ -217,7 +217,7 @@ flowchart LR
 
 ### Design Philosophy
 
-Joshi's AI Studio follows a **dark-first, glassmorphic design system** inspired by premium SaaS tools:
+Manijoshi's AI Studio follows a **dark-first, glassmorphic design system** inspired by premium SaaS tools:
 
 - **Dark Mode Foundation** — Deep backgrounds (#0a0a0f) with subtle gradients reduce eye strain and create a premium feel
 - **Glassmorphism Cards** — `backdrop-filter: blur()` with semi-transparent borders for modern depth
