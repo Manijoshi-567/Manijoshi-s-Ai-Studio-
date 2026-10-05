@@ -18,7 +18,8 @@ class Config:
     ADMIN_LOCK_ENABLED = True
     ALLOWED_PROVIDERS = {"openai", "gemini", "anthropic", "ollama"}
 
-    OUTPUT_DIR = Path("output")
+    # Vercel serverless functions can only write to /tmp
+    OUTPUT_DIR = Path("/tmp/output") if os.getenv("VERCEL") else Path("output")
 
     @classmethod
     def get_api_key(cls, provider: str = None) -> str:
