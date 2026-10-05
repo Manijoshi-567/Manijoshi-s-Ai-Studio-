@@ -41,6 +41,13 @@ INTENT ANALYSIS & GENERATION RULES:
      * emerald_tech: primary "#10b981", secondary "#06b6d4", bg_mode "dark"
      * indigo_saas: primary "#6366f1", secondary "#a855f7", bg_mode "dark"
      * sunset_amber: primary "#ff5e36", secondary "#f59e0b", bg_mode "dark"
+4. CRITICAL TOPIC & DOMAIN AUTHENTICITY (MANDATORY):
+   - Identify the explicit industry and core keywords (e.g. coffee shop, sports car, restaurant, fashion, real estate, ecommerce, fitness).
+   - Use vocabulary, benefits, and imagery specifically relevant to that industry. For example:
+     * Coffee: artisan roasts, velvety espresso, hot & delicious, single-origin beans, cozy ambiance, morning ritual.
+     * Cars: horsepower, 0-60 acceleration, twin-turbo, track performance, aerodynamic carbon bodywork, driving exhilaration.
+     * Food: farm-to-table ingredients, chef specialties, wood-fired hearth, delicious dining.
+   - DO NOT use generic SaaS buzzwords like 'Next Generation Platform' or 'Enterprise Telemetry' unless the product is actually cloud software or an IT platform.
 
 Synthesize this into JSON with the following keys:
 1. "product_name": Short punchy brand/product name
@@ -74,7 +81,8 @@ class CopywriterAgent:
 
     def run(self, strategy: Dict[str, Any]) -> Dict[str, Any]:
         system_prompt = (
-            "You are a World-Class Conversion Copywriter for SaaS and Tech Products. "
+            "You are a World-Class Conversion Copywriter. "
+            "Adapt your tone and vocabulary directly to the product's industry (e.g. coffee, automotive, fashion, hospitality, consumer goods, SaaS, or luxury). "
             "Using the product positioning strategy, write high-converting, persuasive copy for all landing page sections. "
             "Return your response ONLY as a clean JSON object."
         )
@@ -83,14 +91,22 @@ class CopywriterAgent:
 Product Strategy:
 {json.dumps(strategy, indent=2)}
 
+CRITICAL COPYWRITING RULE:
+Write authentic industry-specific copy tailored to the product topic.
+- If coffee: write about artisan roasts, velvety espresso, hot & delicious, single-origin beans, warm pastries, morning ritual.
+- If cars: write about horsepower, 0-60 velocity, handling, twin-turbo, track precision, adrenaline.
+- If food/dining: write about chef specialties, wood-fired hearth, fresh farm ingredients, gourmet culinary art.
+- If ecommerce: write about fast doorstep delivery, top-rated products, verified reviews, 1-click checkout.
+- NEVER use generic SaaS jargon like 'Next Generation Platform' or 'Enterprise Telemetry' for non-tech products!
+
 Generate structured JSON containing:
-1. "nav": {{ "brand_name": "...", "links": ["Features", "How it Works", "Testimonials", "Pricing", "FAQ"], "cta": "..." }}
+1. "nav": {{ "brand_name": "...", "links": ["Features", "Offerings", "Reviews", "Pricing", "FAQ"], "cta": "..." }}
 2. "hero": {{ "badge": "...", "headline": "...", "subheadline": "...", "primary_cta": "...", "secondary_cta": "...", "trust_metric": "..." }}
 3. "features": [
      {{ "title": "...", "description": "...", "icon": "sparkles" }},
-     {{ "title": "...", "description": "...", "icon": "zap" }},
-     {{ "title": "...", "description": "...", "icon": "shield-check" }},
-     {{ "title": "...", "description": "...", "icon": "bar-chart" }}
+     {{ "title": "...", "description": "...", "icon": "coffee" }},
+     {{ "title": "...", "description": "...", "icon": "heart" }},
+     {{ "title": "...", "description": "...", "icon": "award" }}
    ]
 4. "how_it_works": [
      {{ "step": "01", "title": "...", "description": "..." }},
@@ -102,8 +118,8 @@ Generate structured JSON containing:
      {{ "quote": "...", "author": "...", "role": "...", "company": "...", "avatar_initials": "..." }}
    ]
 6. "pricing": [
-     {{ "name": "Starter", "price": "$29/mo", "description": "Perfect for individuals and small teams", "features": ["...", "..."], "highlighted": false, "cta": "Start Free Trial" }},
-     {{ "name": "Pro", "price": "$79/mo", "description": "For growing companies needing advanced power", "features": ["...", "...", "..."], "highlighted": true, "cta": "Get Pro Now" }}
+     {{ "name": "...", "price": "...", "description": "...", "features": ["...", "..."], "highlighted": false, "cta": "..." }},
+     {{ "name": "...", "price": "...", "description": "...", "features": ["...", "...", "..."], "highlighted": true, "cta": "..." }}
    ]
 7. "faq": [
      {{ "question": "...", "answer": "..." }},

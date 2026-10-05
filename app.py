@@ -387,8 +387,9 @@ INDEX_HTML = """<!DOCTYPE html>
             <div class="form-group">
                 <label>AI Model Provider</label>
                 <select id="provider">
-                    <option value="openai">OpenAI (gpt-4o-mini)</option>
+                    <option value="auto">Auto-Detect (Server Key or Smart Engine)</option>
                     <option value="gemini">Google Gemini (gemini-1.5-flash)</option>
+                    <option value="openai">OpenAI (gpt-4o-mini)</option>
                     <option value="anthropic">Anthropic Claude</option>
                     <option value="ollama">Local Ollama (llama3)</option>
                 </select>
