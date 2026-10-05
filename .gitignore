@@ -1,0 +1,44 @@
+# ─── Python ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.manifest
+*.spec
+
+# ─── Virtual Environment ─────────────────────────────
+venv/
+env/
+.venv/
+ENV/
+
+# ─── Environment Variables (CRITICAL: Never commit) ──
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ─── IDE / Editor ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── Generated Output ───────────────────────────────
+output/
+
+# ─── OS Files ────────────────────────────────────────
+Desktop.ini
+ehthumbs.db
+
+# ─── Logs ────────────────────────────────────────────
+*.log
+npm-debug.log*
